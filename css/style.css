@@ -4,20 +4,20 @@
    ============================================================ */
 
 :root {
-  /* Brand — deep navy ink + antique brass accent */
-  --clay:           #B08D3E;
-  --clay-deep:      #8C6F2C;
-  --clay-tint:      #F3ECD9;
-  --slate:          #1C2B33;
-  --slate-deep:     #121D23;
-  --slate-soft:     #51626B;
-  --paper:          #FAF8F4;
+  /* Brand — colours sampled directly from the Kiama logo artwork */
+  --clay:           #FF730B;
+  --clay-deep:      #D8640D;
+  --clay-tint:      #FFE7D4;
+  --slate:          #123333;
+  --slate-deep:     #0B2424;
+  --slate-soft:     #4A6B6B;
+  --paper:          #F6F9F8;
 
   /* Derived neutrals */
-  --concrete:       #EEF0F0;
-  --concrete-deep:  #DFE3E4;
-  --line:           #D9DEDF;
-  --muted:          #7C8A90;
+  --concrete:       #EBF0EF;
+  --concrete-deep:  #DCE5E4;
+  --line:           #D6E0DF;
+  --muted:          #7C9190;
 
   /* Type */
   --display: "Archivo", "Arial Black", system-ui, sans-serif;
@@ -197,14 +197,10 @@ select:focus-visible, textarea:focus-visible {
   gap: 1.5rem; min-height: 78px;
 }
 
-/* ---------- Brand lockup (inline SVG mark + real text, no raster logo) ---------- */
-.brand { display: flex; align-items: center; gap: .65rem; text-decoration: none; flex: 0 0 auto; }
-.brand-mark { width: 42px; height: 42px; flex: 0 0 auto; }
-@media (max-width: 480px) { .brand-mark { width: 36px; height: 36px; } }
-.brand-word { display: flex; flex-direction: column; line-height: 1.18; }
-.brand-word strong { font-family: var(--display); font-weight: 800; font-size: 1.12rem; letter-spacing: -0.01em; color: var(--slate); }
-.brand-word small { font-family: var(--mono); font-size: .54rem; letter-spacing: .13em; text-transform: uppercase; color: var(--slate-soft); font-weight: 500; }
-@media (max-width: 480px) { .brand-word strong { font-size: .98rem; } }
+/* ---------- Brand lockup (the actual Kiama logo artwork, one crisp SVG) ---------- */
+.brand { display: flex; align-items: center; text-decoration: none; flex: 0 0 auto; }
+.brand-logo { height: 44px; width: auto; display: block; }
+@media (max-width: 560px) { .brand-logo { height: 32px; } }
 
 .nav { display: flex; align-items: center; gap: clamp(.75rem, 1.7vw, 1.6rem); }
 .nav a {
@@ -411,9 +407,7 @@ a.card:hover { transform: translateY(-3px); }
 .foot-top { display: grid; gap: clamp(2rem, 4vw, 3rem); grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
 .foot-brand { margin-bottom: 0; }
 .foot-brand .brand { margin-bottom: 1.25rem; }
-.foot-brand .brand-mark { width: 46px; height: 46px; }
-.foot-brand .brand-word strong { color: var(--paper); }
-.foot-brand .brand-word small { color: rgba(251, 249, 245, .6); }
+.foot-brand .brand-logo { height: 40px; }
 .foot-brand address { font-style: normal; line-height: 1.75; }
 .foot-brand a { color: rgba(251, 249, 245, .72); }
 .site-foot h4 {

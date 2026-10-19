@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <path d="M16,0 H84 L100,16 V84 L84,100 H16 L0,84 V16 Z" fill="#1C2B33"/>
-  <rect x="28" y="18" width="13" height="64" fill="#B08D3E"/>
-  <path d="M38,52 L80,18 M38,50 L80,82" fill="none" stroke="#B08D3E" stroke-width="13" stroke-linecap="square"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="345 521 144 239" width="144" height="239" version="1.0">
+  <path fill="#ff730b" d="M 478.566406 530.851562 L 478.28125 607.785156 L 450.925781 635.402344 L 445.949219 640.425781 L 445.835938 640.539062 L 407.6875 602.390625 L 407.804688 602.277344 L 412.777344 597.253906 L 478.566406 530.851562 " fill-opacity="1" fill-rule="nonzero"/>
+  <path fill="#d8640d" d="M 445.949219 640.425781 L 407.804688 602.277344 L 412.777344 597.253906 L 450.925781 635.402344 L 445.949219 640.425781 " fill-opacity="1" fill-rule="nonzero"/>
+  <path fill="#0a8182" d="M 478.566406 749.921875 L 478.28125 672.988281 L 409.371094 604.078125 L 409.371094 530.851562 L 355.171875 583.714844 L 355.171875 711.882812 L 397.691406 669.050781 L 478.566406 749.921875 " fill-opacity="1" fill-rule="nonzero"/>
 </svg>

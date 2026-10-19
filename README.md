@@ -27,13 +27,19 @@ no dependencies to keep updated.
 └── vercel.json            Clean URLs, redirects, cache and security headers
 ```
 
-The logo is not a raster file — it's inline SVG inside the header and footer of every
-page (a navy chamfered tile with a geometric brass "K" monogram), paired with real
-HTML text ("Kiama / Building Solutions") so it's crisp at any size, loads instantly,
-and the company name stays selectable and indexable. If you ever want to change it,
-search every `.html` file for `brand-mark` and edit the one `<svg>` block — then copy
-that same block into the other pages (there's no templating engine, so each page is a
-real, self-contained file).
+The logo is the client-supplied Kiama artwork, used exactly as provided — stored as
+`assets/kiama-logo.svg` (a tightly-cropped vector copy; `kiama-logo-original.svg` is
+the untouched source file) and referenced from every page as a single `<img
+class="brand-logo">`, so it's crisp at any size, loads fast, and stays pixel-identical
+everywhere it appears. `assets/favicon.svg` is a separate crop of just the icon mark
+(no wordmark) for the browser tab, pinned tiles and app icon. `assets/kiama-logo.png`
+is a high-resolution raster render of the same artwork, used for the og-image and the
+letterhead.
+
+To swap in a different logo revision later, replace `kiama-logo.svg` and re-run the
+rasterisation (see `letterhead/generate.md` for the script) to refresh the favicons,
+og-image and letterhead — the website itself just needs the one file replaced, since
+every page loads it via `<img src="/assets/kiama-logo.svg">` rather than embedding it.
 
 ---
 
@@ -142,12 +148,13 @@ restrictions.
 
 ## Changing brand colours
 
-Everything derives from CSS variables at the top of `css/style.css`:
+Everything derives from CSS variables at the top of `css/style.css`, sampled directly
+from the logo artwork:
 
 ```css
---clay:  #B08D3E;   /* antique brass accent */
---slate: #1C2B33;   /* deep navy ink */
---paper: #FAF8F4;   /* warm background */
+--clay:  #FF730B;   /* orange — sampled from "KIAMA" in the logo */
+--slate: #123333;   /* dark teal-ink — derived from the logo's teal */
+--paper: #F6F9F8;   /* cool background */
 ```
 
 Change those three and the whole site follows — buttons, links, the logo mark, the

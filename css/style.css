@@ -4,20 +4,20 @@
    ============================================================ */
 
 :root {
-  /* Brand */
-  --clay:           #C1512E;
-  --clay-deep:      #9C3F22;
-  --clay-tint:      #FBE8DE;
-  --slate:          #2B3A42;
-  --slate-deep:     #1C2730;
-  --slate-soft:     #57666D;
-  --paper:          #FBF9F5;
+  /* Brand — deep navy ink + antique brass accent */
+  --clay:           #B08D3E;
+  --clay-deep:      #8C6F2C;
+  --clay-tint:      #F3ECD9;
+  --slate:          #1C2B33;
+  --slate-deep:     #121D23;
+  --slate-soft:     #51626B;
+  --paper:          #FAF8F4;
 
   /* Derived neutrals */
-  --concrete:       #EFEDE8;
-  --concrete-deep:  #E1DDD3;
-  --line:           #DCD6CB;
-  --muted:          #8B8378;
+  --concrete:       #EEF0F0;
+  --concrete-deep:  #DFE3E4;
+  --line:           #D9DEDF;
+  --muted:          #7C8A90;
 
   /* Type */
   --display: "Archivo", "Arial Black", system-ui, sans-serif;

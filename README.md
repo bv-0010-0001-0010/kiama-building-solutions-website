@@ -28,12 +28,12 @@ no dependencies to keep updated.
 ```
 
 The logo is not a raster file — it's inline SVG inside the header and footer of every
-page (a chamfered terracotta tile with a house mark), paired with real HTML text
-("Kiama / Building Solutions") so it's crisp at any size, loads instantly, and the
-company name stays selectable and indexable. If you ever want to change it, search
-every `.html` file for `brand-mark` and edit the one `<svg>` block — then copy that
-same block into the other pages (there's no templating engine, so each page is a real,
-self-contained file).
+page (a navy chamfered tile with a geometric brass "K" monogram), paired with real
+HTML text ("Kiama / Building Solutions") so it's crisp at any size, loads instantly,
+and the company name stays selectable and indexable. If you ever want to change it,
+search every `.html` file for `brand-mark` and edit the one `<svg>` block — then copy
+that same block into the other pages (there's no templating engine, so each page is a
+real, self-contained file).
 
 ---
 
@@ -145,9 +145,9 @@ restrictions.
 Everything derives from CSS variables at the top of `css/style.css`:
 
 ```css
---clay:  #C1512E;   /* terracotta accent */
---slate: #2B3A42;   /* charcoal ink */
---paper: #FBF9F5;   /* warm background */
+--clay:  #B08D3E;   /* antique brass accent */
+--slate: #1C2B33;   /* deep navy ink */
+--paper: #FAF8F4;   /* warm background */
 ```
 
 Change those three and the whole site follows — buttons, links, the logo mark, the

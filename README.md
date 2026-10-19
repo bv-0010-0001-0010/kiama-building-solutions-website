@@ -36,10 +36,12 @@ everywhere it appears. `assets/favicon.svg` is a separate crop of just the icon 
 is a high-resolution raster render of the same artwork, used for the og-image and the
 letterhead.
 
-To swap in a different logo revision later, replace `kiama-logo.svg` and re-run the
-rasterisation (see `letterhead/generate.md` for the script) to refresh the favicons,
-og-image and letterhead — the website itself just needs the one file replaced, since
-every page loads it via `<img src="/assets/kiama-logo.svg">` rather than embedding it.
+To swap in a different logo revision later, replace `kiama-logo.svg` — the website
+itself just needs that one file, since every page loads it via
+`<img src="/assets/kiama-logo.svg">` rather than embedding it. You'll also want to
+re-rasterise it to PNG (e.g. with the `sharp` npm package, at a few thousand pixels
+wide) to refresh `assets/favicon.svg`, the favicons, `og-image.png`, and the letterhead
+in the separate `Kiama Building Solutions - Letterhead` folder (see its own README).
 
 ---
 
